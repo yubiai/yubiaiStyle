@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 /**
  * Primary UI 
  */
-export const ButtonUI = ({ color, size, label}) => {
+const ButtonUI = ({ color, size, label}) => {
   return (
     <Button type="button" variant="contained" size={size} color={color}>
       {label}
@@ -39,3 +39,5 @@ ButtonUI.defaultProps = {
   size: 'medium',
   onClick: undefined,
 };
+
+export default ButtonUI;

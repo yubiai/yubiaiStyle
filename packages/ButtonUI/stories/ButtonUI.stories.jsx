@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ButtonUI } from '../ButtonUI';
+import { ButtonUI } from '../../../index';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
