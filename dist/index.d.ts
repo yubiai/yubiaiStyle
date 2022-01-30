@@ -2,6 +2,6 @@
 interface ButtonProps {
     label: string;
 }
-declare const Button: (props: ButtonProps) => JSX.Element;
+declare const ButtonUI: (props: ButtonProps) => JSX.Element;
 
-export { Button };
+export { ButtonUI };

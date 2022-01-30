@@ -2456,9 +2456,9 @@ if (process.env.NODE_ENV === 'production') {
 
 var React = react.exports;
 
-var Button = function (props) {
+var ButtonUI = function (props) {
     return React.createElement("button", null, props.label);
 };
 
-export { Button };
+export { ButtonUI };
 //# sourceMappingURL=index.js.map
