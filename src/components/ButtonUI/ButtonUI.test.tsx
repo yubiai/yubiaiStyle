@@ -4,6 +4,6 @@ import ButtonUI from ".";
 
 describe("Button", () => {
   test("renders the Button component", () => {
-    render(<ButtonUI label="Hello world!" />);
+    render(<ButtonUI variant="contained" color="success" size="medium" label="Hello world!" />);
   });
 });

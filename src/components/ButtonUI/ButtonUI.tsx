@@ -1,12 +1,19 @@
 import React from "react";
+import Button, {ButtonProps} from '@mui/material/Button';
 import "./ButtonUI.css";
 
-export interface ButtonProps {
+interface MyButtonProps extends ButtonProps {
   label: string;
 }
 
-const ButtonUI = (props: ButtonProps) => {
-  return <button>{props.label}</button>;
+const ButtonUI = (props: MyButtonProps) => {
+  return <Button variant={props.variant} size={props.size} color={props.color}>{props.label}</Button>;
+};
+
+ButtonUI.defaultProps = {
+  color: 'success',
+  size: 'medium',
+  variant: 'contained'
 };
 
 export default ButtonUI;

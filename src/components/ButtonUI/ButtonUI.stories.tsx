@@ -1,23 +1,33 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import ButtonUI from "./ButtonUI";
+import { ButtonUIDocumentationComponent } from "./ButtonUIDocumentation";
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+
 export default {
-  title: "ReactComponentLibrary/Button",
+  title: "Examples/ButtonUI",
   component: ButtonUI,
-} as ComponentMeta<typeof ButtonUI>;
+  parameters: {
+    docs: {
+      page: ButtonUIDocumentationComponent,
+    },
+  },
+} as ComponentMeta<any>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof ButtonUI> = (args) => <ButtonUI {...args} />;
 
-export const HelloWorld = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
+export const HelloWorld: any = Template.bind({});
 HelloWorld.args = {
   label: "Hello world!",
+  size: "small",
+  variant: "contained",
+  color: "warning"
 };
 
-export const ClickMe = Template.bind({});
-ClickMe.args = {
-  label: "Click me!",
+export const Like: any = Template.bind({});
+Like.args = {
+  label: "Like!",
+  size: "large",
+  variant: "outlined",
+  color: "secondary"
 };
