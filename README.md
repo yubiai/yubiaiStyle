@@ -16,6 +16,17 @@ Storybook agregado para visualizar los componentes y subido a ghPage
 ](https://yubiai.github.io/yubiaiStyle/
 )
 
+## Component folder structure
+
+1. Folder name componente
+     - .tsx (Component)
+     - .test.tsx (Component Test)
+     - .css (css)
+     - stories
+       - .stories.tsx (Storie)
+       - .docs.mdx (Doc)
+       - d.ts (Export)
+
 ## Quick Start
 
 ```bash
