@@ -1,15 +1,14 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import ButtonUI from "./ButtonUI";
-import { ButtonUIDocumentationComponent } from "./ButtonUIDocumentation";
-
+import ButtonUI from "../ButtonUI";
+import ButtonUIDOCS from "./ButtonUI.docs.mdx";
 
 export default {
   title: "Examples/ButtonUI",
   component: ButtonUI,
   parameters: {
     docs: {
-      page: ButtonUIDocumentationComponent,
+      page: ButtonUIDOCS,
     },
   },
 } as ComponentMeta<any>;
